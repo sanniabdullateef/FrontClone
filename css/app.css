@@ -1,0 +1,129 @@
+/* --------------------- */
+/* GENERAL STYLING */
+/* --------------------- */
+
+:root {
+  --theme-grey: rgb(143, 141, 141);
+  --theme-blue: #3777df;
+  --theme-green: #00c9a7;
+}
+
+body {
+  overflow-x: hidden
+}
+
+p {
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.faded {
+  color: var(--theme-grey);
+}
+
+.section-title {
+  margin-bottom: 2em;
+}
+
+.section-title h2 {
+  font-size: 2.5em;
+  font-weight: 200;
+  /* text-align: center; */
+}
+
+/* --------------------- */
+/* HEADER STYLING */
+/* --------------------- */
+
+header {
+  padding: 1em 0;
+  background: #fff;
+  box-shadow: 0px 2px 7px 1px var(--theme-grey);
+  z-index: 1;
+}
+
+.navbar-brand {
+  font-size: 1.9em;
+}
+
+.nav-item {
+  padding: 0 .5em;
+}
+
+.nav-item a {
+  font-size: 1.1em;
+  font-weight: 400;
+}
+
+/* --------------------- */
+/* BANNER STYLING */
+/* --------------------- */
+
+#banner {
+  height: 100vh;
+}
+
+.banner-text div {
+  width: 70%;
+}
+
+.banner-text h1 {
+  font-weight: 300;
+}
+
+.banner-text p span {
+  color: var(--theme-blue)
+}
+
+.banner-text button:first-of-type {
+  color: var(--theme-blue);
+  font-size: 1.15em;
+  font-weight: 500;
+  padding: .5em;
+  background: #dfe8fa
+}
+
+.banner-text button:last-of-type i {
+  color: var(--theme-green);
+  font-size: 1em;
+  padding: 1.2em;
+  margin-right: .5em;
+  background: #cdf0ea;
+  border-radius: 50%;
+  transition: .5s;
+}
+
+.banner-text button:last-of-type:hover i {
+  color: #fff;
+  background: var(--theme-green);
+  transform: scale(1.2);
+}
+
+.curved {
+  height: 28em;
+  width: 100%;
+  margin-left: auto;
+  margin-right: -7em;
+  margin-top: -2em;
+  border-radius: 40% 0 0 40%;
+  transform: rotate(-40deg);
+  z-index: -1;
+  position: relative;
+  overflow: hidden;
+}
+
+.curved:before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  z-index: -1;
+  background: url('../images/banner.jpg');
+  transform: rotate(40deg);
+}
+
+/* --------------------- */
+/* FEATURES STYLING */
+/* --------------------- */
